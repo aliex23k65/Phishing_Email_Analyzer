@@ -1,6 +1,6 @@
-# FS.COM 常见钓鱼模式案例库
+# 企业常见钓鱼模式案例库
 
-本文档整理了 FS.COM 销售团队最常遭遇的钓鱼攻击模式，按威胁等级和出现频率排序。
+本文档整理了企业员工（特别是销售、采购、财务岗位）最常遭遇的钓鱼攻击模式，按威胁等级和出现频率排序。
 分析邮件时可参考这些模式进行模式匹配，提高识别准确度。
 
 ---
@@ -17,8 +17,8 @@
 ### 常见伪装名称
 
 - `BOM_Q2_2026_Updated.html`
-- `PO-Confirmation-FS2026.htm`
-- `DataSheet-400G-QSFP-DD.html`
+- `PO-Confirmation-2026.htm`
+- `DataSheet-Product-Specs.html`
 - `Compliance-Certificate.zip`（解压后是 .html）
 - `Shared-Document-View.html`
 - `Invoice_Payment_Details.htm`
@@ -89,7 +89,7 @@ Reply-to: jennifer.williams.finance@gmail.com  ← 红旗！
 ### 常见伪装主题
 
 - "You have a document to sign via Adobe Sign"
-- "Shared document: Purchase Order #FS-2026-XXX"
+- "Shared document: Purchase Order #2026-XXX"
 - "[Company Name] shared a file with you via SharePoint"
 - "Action Required: Review and sign the attached contract"
 
@@ -138,7 +138,7 @@ Reply-to: jennifer.williams.finance@gmail.com  ← 红旗！
 
 - 即使邮件内容看起来很合理，也要检查发件域名是否正确
 - 涉及敏感操作（转账、提供凭据、下载文件）时，通过其他渠道确认
-- 注意"差一点"的域名：fs-com.co、fscorn.com、fs.com.cn（如果不是官方域名）
+- 注意"差一点"的域名变体（如 company.com → c0mpany.com）
 
 ---
 
@@ -159,7 +159,7 @@ Reply-to: jennifer.williams.finance@gmail.com  ← 红旗！
 
 ---
 
-## 快速判断清单（给销售同事的速查表）
+## 快速判断清单
 
 遇到可疑邮件时，快速过一遍这 5 个问题：
 
