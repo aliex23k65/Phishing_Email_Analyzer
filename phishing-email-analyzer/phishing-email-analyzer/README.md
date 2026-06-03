@@ -1,77 +1,74 @@
 # Phishing Email Analyzer
 
-A Kiro skill for analyzing and identifying phishing emails, designed for sales teams in international trade companies.
+一个面向外贸企业销售团队的 Kiro Skill，用于分析和识别钓鱼邮件。
 
-## Overview
+## 简介
 
-This skill acts as a red team anti-fraud expert, helping sales colleagues identify and respond to phishing email threats. It provides business-first security analysis — protecting against attacks without killing potential deals.
+本 Skill 以红队反诈专家的视角，帮助销售同事识别和应对钓鱼邮件威胁。核心设计理念是「业务优先」—— 在保障安全的同时不误伤潜在商机。
 
-## Key Features
+## 核心能力
 
-- **Phishing Detection**: Identifies credential harvesting, BEC attacks, malicious attachments, and social engineering tactics
-- **Three-Level Alert System**: Clear risk classification (🟢 Safe / 🟡 Suspicious / 🔴 Critical) with actionable next steps
-- **Business-First Approach**: Balances security with business needs — never kills a potential deal without offering a safe verification path
-- **Source Code Analysis**: Analyzes HTML/JavaScript source code of suspicious attachments to detect hidden phishing logic
-- **URL Reputation Check**: Queries domain reputation and registration info for suspicious links
+- **钓鱼检测**：识别凭据窃取、BEC 攻击、恶意附件、社会工程学等攻击手法
+- **三色预警**：清晰的风险分级（🟢 安全 / 🟡 疑似 / 🔴 高危），配合可执行的处置建议
+- **业务优先**：对疑似邮件不会直接封杀，提供安全验证路径保住潜在订单
+- **源码分析**：分析可疑附件（HTML/JS）的源代码，检测隐藏的钓鱼逻辑
+- **链接信誉查询**：对可疑链接进行域名信誉和注册信息查询
 
-## Threat Coverage
+## 威胁覆盖范围
 
-- Fake login pages (Google, Microsoft 365, SSO)
-- BEC / CEO fraud attacks
-- Malicious attachments (.html, .pdf, .zip with embedded scripts)
-- Payment redirection scams
-- OAuth authorization hijacking
-- Spear phishing targeting specific individuals
+- 仿冒登录页（Google、Microsoft 365、企业 SSO）
+- BEC / CEO 欺诈攻击
+- 恶意附件（.html、.pdf、.zip 内嵌脚本）
+- 支付重定向骗局
+- OAuth 授权劫持
+- 鱼叉式定向钓鱼攻击
 
-## Installation
+## 安装
 
-1. Download or clone this repository
-2. Place the `phishing-email-analyzer` folder into your Kiro skills directory
-3. The skill will be automatically activated when users mention phishing-related topics
+1. 下载或克隆本仓库
+2. 将 `phishing-email-analyzer` 文件夹放入 Kiro 的 skills 目录
+3. 当用户提到钓鱼相关话题时，Skill 会自动激活
 
-## Usage
+## 使用方式
 
-Simply describe the suspicious email or paste its content in your Kiro chat. The skill triggers when you mention:
+在 Kiro 聊天中描述可疑邮件或粘贴邮件内容即可。以下关键词会触发本 Skill：
 
 - "帮我看看这封邮件"
 - "这个链接安全吗"
 - "收到奇怪的邮件"
 - "客户发来的邮件不太对"
 - "收款账号变更"
-- Any phishing/suspicious email related topics
+- "紧急付款请求"
+- 以及其他与钓鱼邮件、可疑邮件相关的话题
 
-## File Structure
+## 文件结构
 
 ```
 phishing-email-analyzer/
 ├── README.md
 ├── LICENSE
-├── SKILL.md                              # Main skill definition
+├── SKILL.md                              # Skill 主定义文件
 └── references/
-    ├── common-phishing-patterns.md       # Common phishing patterns & real case templates
-    └── emergency-response.md             # Emergency response procedures
+    ├── common-phishing-patterns.md       # 常见钓鱼模式与真实案例模板
+    └── emergency-response.md             # 应急响应处置流程
 ```
 
-## Output Format
+## 输出格式
 
-The skill outputs a structured security audit report including:
+Skill 会输出结构化的安全审计报告，包含：
 
-- Risk verdict and score (0-100)
-- Threat classification tags
-- List of suspicious indicators
-- Plain-language risk explanation
-- Link/attachment analysis results
-- Actionable next steps
-- Tips for future self-identification
+- 风险判定与评分（0-100）
+- 威胁类型标签
+- 可疑指标清单
+- 通俗易懂的风险说明
+- 链接/附件检查结果
+- 可操作的处置建议
+- 帮助下次自行识别的提醒
 
-## Language
-
-This skill outputs analysis in **Chinese (中文)**, as it's designed for Chinese-speaking sales teams.
-
-## License
+## 许可证
 
 [MIT](LICENSE)
 
-## Author
+## 作者
 
 Aliex Zeng
